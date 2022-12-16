@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <!-- <link rel="stylesheet" href="./data/bootstrap-5.2.2-dist/css/bootstrap.css"> -->
+ <link rel="stylesheet" href="./data/css/sign-in.css">
+
+
+</head>
+<body class="">
+    
+
+     
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form action="#">
+            <h1>Create Account</h1>
+            
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <a href="./dashboard.html"> <button>Sign Up</button></a>
+        </form>
+    </div>
+    <div class="form-container log-in-container">
+        <form action="#">
+            <h1>Log in</h1>
+            
+            <span>to access your miners</span>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <p><a href="#">Forgot your password?</a></p>
+            <a href=""><button>Log In</button></a>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <img src="./images/IMG_7259_copy-removebg-preview.png" alt="logo" height="90" width="90">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account? Log In</p>
+                <button class="ghost" id="logIn">Log In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+              <img src="./images/IMG_7259_copy-removebg-preview.png" alt="logo" height="90" width="90">
+                <h1>Hello, There!</h1>
+                <p>Don't have an account? Sign Up Free</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+   </body>
+<script src="app.js"></script>
+</html>
