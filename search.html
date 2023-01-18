@@ -1,0 +1,77 @@
+//24 hour auto timer with hours minutes and seconds using html css and js?
+const demo = document.getElementById("demo");
+let numClicks = 0;
+
+function update() {
+  const now = new Date().getTime();
+
+  const distance = countDownDate - now;
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  function format() {
+    if (distance < 0) {
+      clearInterval(x);
+      return "Website going Live in only a Couple of Minutes";
+    } else {
+      switch (numClicks) {
+        case 0:
+          return days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        case 1:
+          return Math.floor(distance / 1000) + "s";
+        case 2:
+          return Math.floor(distance / (1000 * 60)) + "m";
+        case 3:
+          return Math.floor(distance / (1000 * 60 * 60)) + "h";
+        case 4:
+          return Math.floor(distance / (1000 * 60 * 60 * 24)) + "d";
+        default:
+          alert('error - numClicks out of range. numClicks = ' + numClicks);
+      }
+    }
+  }
+
+  demo.innerHTML = format();
+}
+demo.addEventListener("click", function() {
+  numClicks = (numClicks + 1) % 5;
+  update();
+});
+const countDownDate = new Date("Dec 23, 2022 08:00:00").getTime();
+const x = setInterval(function() {
+  update();
+}, 1000);
+
+<div id="demo"></div>
+
+ 
+function Timer(duration, display) 
+{
+    var timer = duration, hours, minutes, seconds;
+    setInterval(function () {
+        hours = parseInt((timer /3600)%24, 10)
+        minutes = parseInt((timer / 60)%60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        hours = hours < 10 ? "0" + hours : hours;
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.text(hours +":"+minutes + ":" + seconds);
+
+                --timer;
+    }, 1000);
+}
+
+jQuery(function ($) 
+{
+    var twentyFourHours = 24 * 60 * 60;
+    var display = $('#remainingTime');
+    Timer(twentyFourHours, display);
+});
+
+
+

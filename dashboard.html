@@ -72,8 +72,10 @@
         
       </a>
       <div class="user-info">
-        <button class="button" id="button">+ $0.0  
-        </button>
+        <a class="" href="Deposit.html">
+          <button class="btn" id="balance " href="Deposit.html">+ $0.0  
+          </button>
+         </a>
         <div class="dropdown border-top">
           <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
@@ -113,6 +115,9 @@
                 </div>
               </div>
             </div>
+            <script src="https://widget.coincodex.com/include.js?type=4&ticker=top10&period=1D&textColor=000000&borderColor=dddddd&backgroundColor=ffffff&hoverColor=transparent&currency=USD&range=1D"></script>
+
+
             <div class="user-box first-box">
               <div class="activity card" style="--delay: .2s">
                 <div class="title">Live Transfer Snapshot</div>
@@ -146,88 +151,81 @@
                 </div>
               </div>
               <div class="discount card" style="--delay: .4s">
-                <div class="title">Current Offers For:</div>
+                <div class="title">ZELTAminer Stats:</div>
                 <div class="discount-wrapper">
-                  <div class="discount-info">
+                  <img  class="img-logo" src="./images/IMG_7259_copy-removebg-preview.png" alt="zeltatoken" class="section-picture">
+                  <!-- <div class="discount-info">
                     <div class="subtitle">A. Striker</div>
                     <div class="subtitle-count">$1.1 Million</div>
-                  </div>
-                  
-                  
-                  <div class="pie-chart-progress-bar">
-                    <div class="pie-chart-progress-bar-filled" id="pie-chart-progress-bar-filled"></div>
-                  </div>
-                  
-                  <!-- <div class="discount-chart">
-                    <div class="circle">
-                      <section>
-                        <div id="pie" class="example" style="width: 100px;"></div>
-                        
-                      </section>
-                      <div class="counter">0</div>
-                    </div>
                   </div> -->
+                  <div id="demo"></div>
                 </div>
+                <div class="">
+                  <div class="">
+                    
+                  </div>
+                </div>
+                <script>
+                  function start(al) {
+  var bar = document.getElementById('progressBar');
+  var status = document.getElementById('status');
+  status.innerHTML = al + "%";
+  bar.value = al;
+  al++;
+  var sim = setTimeout("start(" + al + ")", 15000);
+  if (al == 100) {
+    status.innerHTML = "100%";
+    bar.value = 100;
+    clearTimeout(sim);
+    var finalMessage = document.getElementById('finalMessage');
+    finalMessage.innerHTML = "KEEP MINING!";
+  }
+}
+                </script>
+              
                 <div class="discount-profile">
                   <span class="by">By:</span>
         
                   
         
                   <div class="discount-detail">
-                    <div class="discount-name">Paul Winstanley</div>
-                    <div class="discount-type">Brighton & Hove Albion</div>
+                    
+  
+    
+    
+  
+
                   </div>
                 </div>
                 <br>
-                <a href="compareOffers.html"><div class="button offer-button">Compare All Offers</div></a>
+                <div class="progress-bar">
+                <progress id="progressBar" class="progress-bar-fill progress-bar" value="0" max="100" style="width:300px;"></progress></div>
+  <span id="status"></span>
+  <h1 id="finalMessage"></h1>
+  <!-- Add Button with event Click
+  with this event start your progressbar with your function -->
+  <button class="btn" onclick='start(0)'>Start Mining</button>
               </div>
-              <div class="cards-wrapper" style="--delay: .6s">
+              <!-- <div class="cards-wrapper" style="--delay: .6s">
                 
-              </div>
+              </div> -->
+              
               <div class="account-wrapper" style="--delay: .8s">
                 <div class="account-profile">
         
-                  <svg style="width: 100px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 45.2 45.2">
-                    <defs>
-                      <style>
-                        .cls-1 {
-                          fill: #fff;
-                        }
-        
-                        .cls-2 {
-                          fill: url(#linear-gradient);
-                        }
-                      </style>
-                      <linearGradient id="linear-gradient" x1="45.2" y1="22.6" x2="0" y2="22.6" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#00002c" />
-                        <stop offset="0.12" stop-color="#000048" />
-                        <stop offset="0.55" stop-color="#00a" />
-                        <stop offset="0.86" stop-color="#0000e7" />
-                        <stop offset="1" stop-color="blue" />
-                      </linearGradient>
-                    </defs>
-                    <g id="Layer_2" data-name="Layer 2">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <circle class="cls-1" cx="22.6" cy="22.6" r="22.43" />
-                        <path class="cls-2" d="M22.6,0A22.6,22.6,0,1,0,45.2,22.6,22.6,22.6,0,0,0,22.6,0ZM36,36a20,20,0,0,1-1.54,1.38l0,0-.07,0a18.93,18.93,0,0,1-29.2-7.47A18.94,18.94,0,0,1,9.21,9.19a19.32,19.32,0,0,1,2-1.74c.08-.06.32-.25.69-.5a19.51,19.51,0,0,1,3.33-1.82A18.93,18.93,0,0,1,36,36ZM22.6,4.7A17.9,17.9,0,1,0,40.5,22.6,17.89,17.89,0,0,0,22.6,4.7Zm0,5a6.8,6.8,0,1,1-6.79,6.79A6.8,6.8,0,0,1,22.6,9.67Zm0,25.6A8.87,8.87,0,0,1,16,20.52a7.77,7.77,0,0,0,13.29,0A8.88,8.88,0,0,1,22.6,35.27Z" />
-                      </g>
-                    </g>
-                  </svg>
-        
-                  <div class="account-name">Jonathan Jackson</div>
-                  <div class="account-title">Head Of Football Administration</div>
+                
                 </div>
                 <!-- <div class="account card">
                   <div class="account-FTTB">First Team Transfer Budget</div>
                   <div class="account-cash">£8.8 M</div>
-                  <div class="account-income">Remaining</div>
+                  <div class="account-income">Remaining</div>b
         
                 </div> -->
               </div>
             </div>
-            <div class="user-box second-box">
+            <!-- <div class="user-box second-box">
               <div class="cards-wrapper" style="--delay: 1s">
-                <!-- <div class="cards-header" id="headtitlez">
+                <-- <div class="cards-header" id="headtitlez">
                   <div class="cardsiview">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
                       <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
@@ -251,110 +249,61 @@
                   </div>
                 </div> -->
                 <div class="cards card" id="contin">
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th>Due Date</th>
-                        <th>Player Name</th>
-                        <th>C-Code</th>
-                        <th>Cost (£)</th>
-                        <th>Receiving Club</th>
-                        <th>Status</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <input type="checkbox" id="row1" class="table-row">
-                          <span class="time">04/06/21</span>
-                        </td>
-                        <td>Max Power</td>
-                        <td>CC-07A</td>
-                        <td>50K</td>
-                        <td>Futbol FC</td>
-                        <td>
-                          <div class="status is-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M20 6L9 17l-5-5" />
-                            </svg>
-                            Accepted
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <input type="checkbox" id="row2" class="table-row">
-                          <span class="time is-red">04/06/21</span>
-                        </td>
-                        <td>Kris Kross</td>
-                        <td>CC-04A</td>
-                        <td>75K</td>
-                        <td>Futbol FC</td>
-                        <td>
-                          <div class="status is-red">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M18 6L6 18M6 6l12 12" />
-                            </svg>
-                            Rejected
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <input type="checkbox" id="row3" class="table-row">
-                          <span class="time is-wait">07/06/21</span>
-                        </td>
-                        <td>Safe Hanz</td>
-                        <td>CC-01A</td>
-                        <td>67K</td>
-                        <td>Bolfut FC</td>
-                        <td>
-                          <div class="status is-wait"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-loader">
-                              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-                            </svg>
-                            Imminent
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <input type="checkbox" id="row2" class="table-row">
-                          <span class="time is-red">04/06/21</span>
-                        </td>
-                        <td>Ryan Bobson</td>
-                        <td>CC-01B</td>
-                        <td>35K</td>
-                        <td>Futbol FC</td>
-                        <td>
-                          <div class="status is-red">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M18 6L6 18M6 6l12 12" />
-                            </svg>
-                            Rejected
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <input type="checkbox" id="row5" class="table-row">
-                          <span class="time">29/09/21</span>
-                        </td>
-                        <td>Hermann B.</td>
-                        <td>CC-12B</td>
-                        <td>120K</td>
-                        <td>Bolfut FC</td>
-                        <td>
-                          <div class="status is-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                              <path d="M20 6L9 17l-5-5" />
-                            </svg>
-                            Active
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div class="">
+
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-4 text-gray-800" style="color:black;"><b>Recent Transactions</b></h1>
+                    <hr>
+                    <div >
+<?php 
+$sal="SELECT * from transactions WHERE email='{$_SESSION['email']}'";
+$rosult=mysqli_query($conn,$sal) or die("data retrieval error");
+$count=0;
+$tablearray=array();
+while($ro=mysqli_fetch_assoc($rosult)){
+$tablearray[$count]['type']=$ro['type'];
+$tablearray[$count]['amount']=$ro['amount'];
+$tablearray[$count]['date']=$ro['date'];
+$count++;
+}
+?>
+<div class="table-responsive">
+<table class="table table-striped table-light table-bordered">
+    <thead class="thead-dark">
+<tr>
+    <th>Transaction Type</th>
+    <th>Amount</th>
+    <th>Transaction Date</th>
+</tr>
+</thead>
+<tbody>
+<?php foreach($tablearray as $ro){?>
+    <tr>
+        <td style="color:green;"><b><?php echo $ro['type'];?></b></td>
+        <td><b>$<?php echo $ro['amount'];?></b></td>
+        <td><b><?php echo $ro['date'];?></b></td>
+</tr>
+<?php } ?>
+</tbody>
+
+</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
                 </div>
-              </div>
-        
               <!-- <div class="card transection" style="--delay: 1.2s" id="transaction">
                 <div class="transection-header">
                   <div class="head">Contingency Transactions</div>
@@ -656,9 +605,9 @@
                     <div class="credit-type" id="type4">I. NTRODUCER</div>
                     <div class="credit-status" style="color: #00af00;">✔ Rep Agreement</div><div class="credit-status">👀 View Deal History</div>
                   </div> -->
-                </div>
+                <!-- </div>
           </div>
-          
+           -->
       
       
           
@@ -685,15 +634,6 @@
 
 </script>
   
-  <script>
-  // Get the pie chart progress bar filled element
-  const pieChartProgressBarFilled = document.getElementById('pie-chart-progress-bar-filled');
-
-  // Set the clip-path value of the pie chart progress bar filled element
-  // to create the desired progress pie slice
-  pieChartProgressBarFilled.style.clipPath = 'circle(50% at 10% 10%)';
-</script>
-
 
 </body>
 </html>
