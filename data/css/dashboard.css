@@ -63,6 +63,9 @@ body {
 .left-side svg:hover {
   color: #ffffc6ff;
 }
+svg:hover{
+  color: #ffffc6ff;
+}
 
 @-webkit-keyframes left {
   0% {
