@@ -1470,16 +1470,16 @@ body.open .modal{
 
 /* proress bar */
 
-.progress-bar {
+.progress-bar{
   width: 300px;
   height: 20px;
   background: #ddd;
   border-radius: 10px;
-  overflow: hidden;
+  
 }
 .progress-bar-fill {
-  height: 100%;
-  background: orange;
+  
+  background-color: orange;
 }
 @keyframes fill-bar {
   0% { width: 0; }

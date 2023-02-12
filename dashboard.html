@@ -136,7 +136,7 @@
                     </div>
                     <div class="destination-points">
                       <div class="point">ZELTAminer </div>
-                      <div class="sub-point active-miner">OmegaPro </div>
+                      <div class="sub-point active-miner">No Active-Miners </div>
                     </div>
                   </div>
                   <div class="destination-card" id="destinationicardz">
@@ -193,7 +193,7 @@
                             <div class="col mr-2">
                               <div class="text-xs font-weight-bold text-uppercase mb-1">
                                   $BNB</div>
-                              <div class="h5 mb-0 font-weight-bold text-gray-800">$<?php echo $row['deposits']; ?></div>
+                              <div class="h5 mb-0 font-weight-bold text-gray-800">$ <?php echo $row['deposits'];?> </div>
                           </div>
                           </div>
                         </div>
@@ -227,8 +227,9 @@
                   
                 </div>
                 <br>
-                <div class="progress-bar">
-                <progress id="progressBar" class="progress-bar-fill progress-bar" value="0" max="100" style="width:300px;"></progress></div>
+                
+                
+                <div id="progressBar" class="progress-bar" value="0" max="100"></div>
   <span id="status"></span>
   <h1 id="finalMessage"></h1>
   <!-- Add Button with event Click

@@ -4793,6 +4793,7 @@ textarea.form-control-lg {
   white-space: nowrap;
   background-color: var(--bs-progress-bar-bg);
   transition: var(--bs-progress-bar-transition);
+  width: 400px;
 }
 @media (prefers-reduced-motion: reduce) {
   .progress-bar {
